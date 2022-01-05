@@ -34,7 +34,9 @@ console.log(thoughts);
   </div>
 </main>
 // ^With this, we use a ternary operator to conditionally render the <ThoughtList> component. 
+
 // If the query hasn't completed and loading is still defined, we display a message to indicate just that.
+
 //  Once the query is complete and loading is undefined, we pass the thoughts array and a custom title to the <ThoughtList> component as props.
   );
 };

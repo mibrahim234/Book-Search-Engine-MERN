@@ -18,6 +18,8 @@ import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// BrowserRouter and Route are components that the React Router library provides. 
+// We renamed BrowserRouter to Router to make it easier to work with.
 
 
 import Home from './pages/Home';
@@ -48,8 +50,9 @@ function App() {
     <Route exact path="/" component={Home} />
     <Route exact path="/login" component={Login} />
     <Route exact path="/signup" component={Signup} />
-    <Route exact path="/profile" component={Profile} />
-    <Route exact path="/thought" component={SingleThought} />
+    <Route exact path="/profile/:username?" component={Profile} />
+   <Route exact path="/thought/:id" component={SingleThought} />
+
 
     <Route component={NoMatch} />
   </Switch>
