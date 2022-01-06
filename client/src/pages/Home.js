@@ -41,4 +41,5 @@ console.log(thoughts);
   );
 };
 
+
 export default Home;

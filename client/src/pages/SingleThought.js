@@ -5,8 +5,8 @@ import { useParams } from 'react-router-dom';
 import ReactionList from '../components/ReactionList';
 // reaction component
 
-import { useQuery } from '@apollo/client';
 import { QUERY_THOUGHT } from '../utils/queries';
+import { useQuery } from '@apollo/client';
 // import queries.js/ apolloclient
 
 const SingleThought = (props) => {
